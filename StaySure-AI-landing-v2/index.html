@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StaySure AI - 사용자 맥락 기반 AI 호텔 예약 옵션 검증 서비스" />
+  <title>StaySure AI | 예약 전, 조건을 한 번 더 확실하게</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand" aria-label="StaySure AI 홈">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>StaySure <strong>AI</strong></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#problem">문제</a>
+        <a href="#how">작동 방식</a>
+        <a href="#demo">체험하기</a>
+      </nav>
+
+      <a href="#demo" class="button button-small button-ghost">AI 검증 체험</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Context-aware Hotel Booking Assistant
+          </div>
+
+          <h1>
+            예약하기 직전,<br />
+            <span class="text-gradient">내 조건과 정말 맞는지</span><br />
+            AI가 한 번 더 확인해요.
+          </h1>
+
+          <p class="hero-description">
+            StaySure AI는 고객이 처음 입력한 여행 조건을 기억하고,
+            실제 예약 옵션의 정책과 비교해 <strong>조건 불일치, 위험 요소, 다음 행동</strong>을
+            예약 전에 알려주는 AI 호텔 옵션 검증 서비스입니다.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#demo" class="button button-primary">
+              내 예약 조건 검증해보기
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#how" class="text-link">어떻게 작동하나요?</a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              자연어 조건 기억
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              정책 기반 비교
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon">✓</span>
+              다음 행동 안내
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-product reveal reveal-delay">
+          <div class="browser-shell hero-auto-demo" id="heroAutoDemo">
+            <div class="browser-top">
+              <div class="browser-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="browser-address">staysure.ai/check</div>
+              <div class="hero-stage-dots" aria-label="자동 데모 진행 상태">
+                <button type="button" class="active" data-hero-dot="0" aria-label="1단계"></button>
+                <button type="button" data-hero-dot="1" aria-label="2단계"></button>
+                <button type="button" data-hero-dot="2" aria-label="3단계"></button>
+              </div>
+            </div>
+
+            <div class="product-window hero-stage active" data-hero-stage="0">
+              <div class="product-head">
+                <div>
+                  <p class="mini-label">STEP 01 · CONTEXT MEMORY</p>
+                  <h2>여행 조건을 기억했어요</h2>
+                </div>
+                <span class="status-badge hero-status">5개 조건</span>
+              </div>
+
+              <div class="hero-context-message">
+                <span class="ai-orb">AI</span>
+                <p>“Gold 회원이고 부모님 포함 3명, 최대 4명까지 가능하고 조식은 꼭 필요해.”</p>
+              </div>
+
+              <div class="context-card context-card-large">
+                <div class="context-top">
+                  <span class="context-check">✓</span>
+                  <div>
+                    <strong>예약 검증에 필요한 조건으로 정리했어요.</strong>
+                    <p>상품 탐색 이후에도 이 맥락을 유지합니다.</p>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span>Gold 회원</span>
+                  <span>성인 3명</span>
+                  <span>최대 4명 가능성</span>
+                  <span>조식 필수</span>
+                  <span>주말 일정</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-window hero-stage" data-hero-stage="1">
+              <div class="product-head">
+                <div>
+                  <p class="mini-label">STEP 02 · OPTION SELECT</p>
+                  <h2>예약 옵션을 선택해볼게요</h2>
+                </div>
+                <span class="status-badge hero-status">3개 후보</span>
+              </div>
+
+              <div class="hero-option-stack">
+                <button type="button" class="hero-option-card selected">
+                  <span class="hero-option-radio"></span>
+                  <span class="hero-option-main">
+                    <strong>Premium Breakfast Package</strong>
+                    <small>Deluxe Twin · 성인 3인 · 조식 포함</small>
+                  </span>
+                  <span class="hero-option-score">82%</span>
+                </button>
+                <button type="button" class="hero-option-card">
+                  <span class="hero-option-radio"></span>
+                  <span class="hero-option-main">
+                    <strong>Family Deluxe</strong>
+                    <small>Deluxe Family · 최대 4인 · 조식 별도</small>
+                  </span>
+                  <span class="hero-option-score">91%</span>
+                </button>
+                <button type="button" class="hero-option-card">
+                  <span class="hero-option-radio"></span>
+                  <span class="hero-option-main">
+                    <strong>Gold Member Special</strong>
+                    <small>Executive Twin · 회원 혜택 포함</small>
+                  </span>
+                  <span class="hero-option-score">76%</span>
+                </button>
+              </div>
+
+              <div class="hero-selection-note">
+                <span class="selection-pulse"></span>
+                Premium Breakfast Package를 선택했어요. 조건 검증을 시작합니다.
+              </div>
+            </div>
+
+            <div class="product-window hero-stage" data-hero-stage="2">
+              <div class="product-head">
+                <div>
+                  <p class="mini-label">STEP 03 · OPTION VALIDATION</p>
+                  <h2>Premium Breakfast Package</h2>
+                </div>
+                <span class="status-badge status-warning">2개 확인 필요</span>
+              </div>
+
+              <div class="check-list hero-check-list">
+                <article class="check-item success">
+                  <div class="check-symbol">✓</div>
+                  <div>
+                    <strong>조식 포함 조건 충족</strong>
+                    <p>성인 3인 조식이 기본 혜택에 포함되어 있어요.</p>
+                  </div>
+                </article>
+
+                <article class="check-item warning">
+                  <div class="check-symbol">!</div>
+                  <div>
+                    <strong>4인 투숙 시 추가 확인 필요</strong>
+                    <p>기본 정원은 3인이며 엑스트라 베드 요청이 필요해요.</p>
+                  </div>
+                </article>
+
+                <article class="check-item danger">
+                  <div class="check-symbol">!</div>
+                  <div>
+                    <strong>Gold 회원 혜택 적용 제외</strong>
+                    <p>프로모션 요금에는 객실 업그레이드 혜택이 적용되지 않아요.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="next-action">
+                <div>
+                  <span class="mini-label">StaySure AI 제안</span>
+                  <strong>4인 가능 옵션으로 변경하면 더 안전해요.</strong>
+                </div>
+                <button type="button">대안 옵션 보기</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-one">
+            <span>Auto Flow</span>
+            <strong id="heroFlowLabel">맥락 기억 중</strong>
+          </div>
+          <div class="floating-card floating-card-two">
+            <span>StaySure AI</span>
+            <strong>선택 전 위험 확인</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section" id="problem">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">WHY STAYSURE</span>
+          <h2>호텔 예약의 문제는<br />정보가 없는 게 아니라, <span>너무 많다는 것</span></h2>
+          <p>
+            사용자는 상품명, 객실 타입, 인원 정책, 조식, 취소 규정, 회원 혜택을
+            각각 확인해야 합니다. StaySure AI는 이 정보를 고객의 실제 여행 조건과 연결합니다.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <div class="problem-number">01</div>
+            <div class="problem-icon">⌕</div>
+            <h3>조건은 여러 화면에 흩어져 있고</h3>
+            <p>객실 상세, 혜택 안내, 유의사항, 취소 정책을 오가며 직접 비교해야 합니다.</p>
+          </article>
+
+          <article class="problem-card reveal reveal-delay-1">
+            <div class="problem-number">02</div>
+            <div class="problem-icon">↺</div>
+            <h3>처음 말한 조건은 다시 입력해야 하고</h3>
+            <p>탐색 중 입력한 인원, 일정, 필수 혜택 같은 맥락이 예약 단계까지 이어지지 않습니다.</p>
+          </article>
+
+          <article class="problem-card reveal reveal-delay-2">
+            <div class="problem-number">03</div>
+            <div class="problem-icon">⚠</div>
+            <h3>실수는 결제 직전에 발견됩니다</h3>
+            <p>선택한 옵션이 실제 여행 조건과 맞지 않아 재탐색하거나 예약 후 취소하는 일이 생깁니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how section" id="how">
+      <div class="container how-grid">
+        <div class="how-copy reveal">
+          <span class="section-kicker">HOW IT WORKS</span>
+          <h2>처음부터 다시 묻지 않고,<br /><span>예약 순간에 필요한 것만</span> 확인합니다.</h2>
+          <p>
+            StaySure AI는 탐색부터 예약까지 하나의 맥락으로 연결해,
+            사용자가 실제로 선택한 옵션에 대해 필요한 검증만 수행합니다.
+          </p>
+
+          <div class="step-list">
+            <button class="step active" data-step="1">
+              <span class="step-index">01</span>
+              <span>
+                <strong>여행 조건을 자연어로 입력</strong>
+                <small>일정, 인원, 회원 등급, 필수 혜택을 자유롭게 말해요.</small>
+              </span>
+            </button>
+
+            <button class="step" data-step="2">
+              <span class="step-index">02</span>
+              <span>
+                <strong>AI가 맥락을 구조화해 기억</strong>
+                <small>예약 검증에 필요한 조건만 추출해 유지합니다.</small>
+              </span>
+            </button>
+
+            <button class="step" data-step="3">
+              <span class="step-index">03</span>
+              <span>
+                <strong>선택 옵션과 정책을 비교</strong>
+                <small>불일치, 위험 요소, 다음 행동을 한 화면에서 안내해요.</small>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="flow-visual reveal reveal-delay">
+          <div class="flow-card" id="flowCard">
+            <div class="flow-screen active" data-screen="1">
+              <span class="flow-label">STEP 01 · CONTEXT INPUT</span>
+              <h3>어떤 여행을 계획하고 있나요?</h3>
+              <div class="fake-input">
+                나 Gold 회원이고 다음 주말에 부모님 포함 3명이서 갈 거야.
+                조식은 꼭 필요하고, 동생이 합류하면 4명까지 갈 수도 있어.
+              </div>
+              <div class="flow-footer">
+                <span>자연어로 편하게 입력</span>
+                <span class="send-circle">↑</span>
+              </div>
+            </div>
+
+            <div class="flow-screen" data-screen="2">
+              <span class="flow-label">STEP 02 · CONTEXT MEMORY</span>
+              <h3>예약에 필요한 조건을 정리했어요.</h3>
+              <div class="memory-list">
+                <div><span>회원 등급</span><strong>Gold</strong></div>
+                <div><span>기본 인원</span><strong>성인 3명</strong></div>
+                <div><span>변동 가능성</span><strong>최대 4명</strong></div>
+                <div><span>필수 조건</span><strong>조식 포함</strong></div>
+                <div><span>일정</span><strong>다음 주말</strong></div>
+              </div>
+              <p class="memory-note">이 조건은 상품 탐색 후 예약 옵션 검증 단계까지 유지됩니다.</p>
+            </div>
+
+            <div class="flow-screen" data-screen="3">
+              <span class="flow-label">STEP 03 · OPTION VALIDATION</span>
+              <h3>선택한 옵션을 확인했어요.</h3>
+              <div class="result-summary">
+                <div class="score-ring">82</div>
+                <div>
+                  <strong>대체로 적합하지만 확인이 필요해요.</strong>
+                  <p>5개 조건 중 3개 충족 · 2개 위험 요소</p>
+                </div>
+              </div>
+              <div class="mini-checks">
+                <span class="ok">✓ 조식 포함</span>
+                <span class="warn">! 최대 인원</span>
+                <span class="warn">! 회원 혜택</span>
+              </div>
+              <button class="flow-cta" type="button">안전한 대안 옵션 확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo section" id="demo">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="section-kicker">INTERACTIVE DEMO</span>
+          <h2>내 여행 조건으로<br /><span>예약 옵션을 미리 검증해보세요</span></h2>
+          <p>여행 조건을 입력하면 AI가 후보 옵션을 보여주고, 선택한 상품의 정책을 고객 맥락과 비교합니다.</p>
+        </div>
+
+        <div class="demo-shell reveal">
+          <div class="demo-left">
+            <div class="demo-step-label">1. 여행 조건 입력</div>
+            <label for="tripContext">이번 여행에서 중요한 조건을 알려주세요.</label>
+            <textarea id="tripContext" rows="7">나 Gold 회원이고 다음 주 토요일에 부모님 포함 성인 3명이서 호캉스 갈 거야. 조식은 꼭 필요하고, 동생이 합류할 수도 있어서 최대 4명까지 가능한 객실이면 좋겠어. 취소는 하루 전까지 무료면 좋겠어.</textarea>
+
+            <div class="sample-prompts">
+              <span>빠른 예시</span>
+              <button type="button" data-prompt="부모님과 3명이 가고 조식이 꼭 필요해. 한 명이 추가될 수도 있어.">가족 여행</button>
+              <button type="button" data-prompt="2명이 주말에 갈 거고 늦은 체크아웃이 중요해. 취소 수수료 없는 상품을 원해.">주말 호캉스</button>
+              <button type="button" data-prompt="아이 1명 포함 3명이 갈 거야. 침대 추가 가능 여부와 키즈 조식 정책이 중요해.">아이 동반</button>
+            </div>
+
+            <button type="button" class="button button-primary demo-submit" id="analyzeBtn">
+              <span>조건에 맞는 옵션 찾아보기</span>
+              <span aria-hidden="true">→</span>
+            </button>
+
+            <div class="demo-memory-panel hidden" id="demoMemoryPanel">
+              <span class="analysis-caption">AI가 기억한 여행 조건</span>
+              <div class="remembered-context" id="contextChips"></div>
+            </div>
+          </div>
+
+          <div class="demo-right">
+            <div class="demo-step-label">2. 예약 옵션 검증 결과</div>
+
+            <div class="empty-state" id="emptyState">
+              <div class="empty-orb">AI</div>
+              <strong>여행 조건을 입력하면 후보 옵션을 보여드려요.</strong>
+              <p>후보 중 하나를 선택하면 그때 상품 정책과 여행 조건을 비교해 상세 검증합니다.</p>
+            </div>
+
+            <div class="option-results hidden" id="optionResults">
+              <div class="option-results-head">
+                <div>
+                  <span class="analysis-caption">OPTION CANDIDATES</span>
+                  <h3>조건을 고려한 예약 옵션 3개</h3>
+                </div>
+                <span>선택해서 검증하기</span>
+              </div>
+
+              <div class="option-list" id="optionList"></div>
+
+              <div class="option-detail-placeholder" id="optionDetailPlaceholder">
+                <span class="detail-arrow">↑</span>
+                <strong>옵션을 하나 선택해주세요.</strong>
+                <p>선택한 상품의 조건 불일치, 위험 요소, 다음 행동을 확인할 수 있어요.</p>
+              </div>
+
+              <div class="analysis-result hidden" id="analysisResult">
+                <div class="selected-option-summary" id="selectedOptionSummary"></div>
+
+                <div class="analysis-head">
+                  <div>
+                    <span class="analysis-caption">STAYSURE CHECK</span>
+                    <h3 id="analysisTitle">예약 전 확인이 필요해요.</h3>
+                  </div>
+                  <span class="match-score" id="matchScore">82% 적합</span>
+                </div>
+
+                <div class="analysis-list" id="analysisList"></div>
+
+                <div class="recommendation-box">
+                  <div>
+                    <span>다음 행동 제안</span>
+                    <strong id="nextActionText">4인 투숙 가능 객실로 변경하거나 추가 인원 정책을 확인하세요.</strong>
+                  </div>
+                  <button type="button" id="alternativeBtn">다른 옵션 보기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="demo-disclaimer reveal">
+          * 본 화면의 호텔 상품과 정책은 서비스 컨셉 설명을 위한 예시 데이터입니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="value section">
+      <div class="container value-shell reveal">
+        <div class="value-copy">
+          <span class="section-kicker light">STAYSURE VALUE</span>
+          <h2>더 많이 추천하는 AI보다,<br />더 <span>확실하게 선택하게 하는 AI</span></h2>
+          <p>
+            StaySure AI는 고객의 결정을 대신하지 않습니다.
+            대신 복잡한 상품 정책을 고객의 상황에 맞게 다시 읽어주고,
+            예약 실패 가능성을 줄이는 데 집중합니다.
+          </p>
+        </div>
+
+        <div class="value-stats">
+          <div>
+            <strong>Context</strong>
+            <span>탐색 맥락 유지</span>
+          </div>
+          <div>
+            <strong>Check</strong>
+            <span>정책 기반 검증</span>
+          </div>
+          <div>
+            <strong>Action</strong>
+            <span>다음 행동 제안</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section">
+      <div class="container final-cta-inner reveal">
+        <span class="section-kicker">BOOK WITH CONFIDENCE</span>
+        <h2>복잡한 예약일수록,<br />마지막 확인은 더 간단해야 하니까.</h2>
+        <p>StaySure AI와 함께 내 조건에 맞는 예약인지 확인하고 결정하세요.</p>
+        <a href="#demo" class="button button-primary">
+          예약 옵션 검증해보기
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="brand footer-brand">
+        <span class="brand-mark">S</span>
+        <span>StaySure <strong>AI</strong></span>
+      </a>
+      <p>Context-aware AI hotel option validation concept.</p>
+      <span>© 2026 StaySure AI</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
